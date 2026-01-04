@@ -24,3 +24,13 @@ body {
 section {
     overflow: hidden;
 }
+
+.profile-pic {
+    height: 30rem;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-pic {
+        height: auto;
+    }
+}

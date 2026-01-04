@@ -16,8 +16,12 @@
 .modern-link {
     position: relative;
     font-weight: 500;
-    color: var(--bs-body-color);
+    // color: var(--bs-body-color);
     transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--bs-primary);
+    }
 
     &::after {
         content: '';
@@ -34,6 +38,11 @@
     &.active::after {
         width: 100%;
     }
+}
+
+.nav-link.active,
+.nav-link.show {
+    color: var(--bs-primary) !important;
 }
 
 // Premium Theme Button

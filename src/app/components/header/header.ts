@@ -3,10 +3,11 @@ import { Component, HostListener, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Constants } from '../../models/constants';
 import { ThemeService } from '../../services/theme-service';
+import { ThemeToggler } from "../theme-toggler/theme-toggler";
 
 @Component({
   selector: 'app-header',
-  imports: [NgClass, RouterLink, RouterLinkActive],
+  imports: [NgClass, RouterLink, RouterLinkActive, ThemeToggler],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

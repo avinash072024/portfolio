@@ -11,9 +11,14 @@ export class Skills {
     {
       title: 'Frontend Development',
       skills: [
-        { name: 'Angular 20', icon: 'bi-patch-check-fill', level: 90, color: '#dd0031' },
-        { name: 'TypeScript', icon: 'bi-filetype-ts', level: 85, color: '#3178c6' },
-        { name: 'Bootstrap 5', icon: 'bi-bootstrap-fill', level: 95, color: '#7952b3' }
+        { name: 'HTML5', icon: 'fa-brands fa-html5', level: 98, color: '#e34f26' },
+        { name: 'CSS3, SCSS, SASS', icon: 'fa-brands fa-css3-alt', level: 98, color: '#264de4' },
+        { name: 'JavaScript', icon: 'fa-brands fa-js', level: 90, color: '#f7df1e' },
+        { name: 'Angular 13+', icon: 'fa-brands fa-angular', level: 90, color: '#dd0031' },
+        { name: 'React, Next.js', icon: 'fa-brands fa-react', level: 70, color: '#61dafb' },
+        { name: 'TypeScript', icon: 'bi bi-typescript', level: 85, color: '#3178c6' },
+        { name: 'Bootstrap, Tailwind CSS', icon: 'bi bi-bootstrap-fill', level: 95, color: '#7952b3' },
+        { name: 'jQuery', icon: 'fa-brands fa-js', level: 80, color: '#0769ad' }
       ]
     },
     {

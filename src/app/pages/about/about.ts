@@ -15,12 +15,14 @@ export class About {
   }
 
   education = [
-    { year: '2018 - 2022', degree: 'Bachelor of Technology', school: 'Tech University', desc: 'Specialized in Computer Science with a focus on Web Technologies.' },
-    { year: '2016 - 2018', degree: 'Higher Secondary', school: 'Science Academy', desc: 'Focused on Mathematics and Physics.' }
+    { year: '2015 - 2018', degree: 'Master of Computer Application', school: 'Shivaji University, Kolhapur', desc: 'Specialized in Computer Science with a focus on Web Technologies.' },
+    { year: '2012 - 2015', degree: 'Bachelor of Science', school: 'Shivaji University, Kolhapur', desc: 'Focused on Computer Science and Mathematics.' },
+    { year: '2011 - 2012', degree: 'Higher Secondary', school: 'Science Academy', desc: 'Focused on Mathematics and Physics.' }
   ];
 
   experience = [
-    { year: '2023 - Present', role: 'Senior Web Developer', company: 'Digital Solutions Inc.', desc: 'Leading the frontend team to build scalable Angular applications.' },
-    { year: '2022 - 2023', role: 'Junior Developer', company: 'SoftSystems', desc: 'Developed responsive UI components using Bootstrap and JavaScript.' }
+    { year: '2024 - Present', role: 'Senior Web Developer', company: 'Manorama Infosolutions Pvt. Ltd.', desc: 'Leading the frontend team to build scalable Angular applications.' },
+    { year: '2022 - 2024', role: 'Web Developer', company: 'Bluebenz Digitizations Pvt. Ltd.', desc: 'Developed responsive UI components using Bootstrap and Angular.' },
+    { year: '2021 - 2022', role: 'Junior Developer', company: 'MindLine Technologies Pvt. Ltd.', desc: 'Designed & developed responsive websites using Bootstrap.' }
   ];
 }

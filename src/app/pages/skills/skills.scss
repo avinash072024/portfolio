@@ -19,17 +19,17 @@
         position: relative;
         overflow: hidden;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--bs-primary);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 4px;
+        //     height: 100%;
+        //     background: var(--bs-primary);
+        //     opacity: 0;
+        //     transition: opacity 0.3s ease;
+        // }
 
         &:hover {
             transform: translateY(-10px) scale(1.02);
