@@ -1,4 +1,5 @@
 import { Component, computed, signal } from '@angular/core';
+import { UnderConstructionPage } from "../../components/under-construction-page/under-construction-page";
 
 interface Project {
   id: number;
@@ -11,7 +12,7 @@ interface Project {
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [UnderConstructionPage],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
