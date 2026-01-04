@@ -12,7 +12,7 @@ interface Project {
 
 @Component({
   selector: 'app-projects',
-  imports: [UnderConstructionPage],
+  imports: [],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
