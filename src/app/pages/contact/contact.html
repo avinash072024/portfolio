@@ -1,0 +1,91 @@
+<section class="contact-section py-5 overflow-hidden">
+    <div class="container mt-5 pt-5">
+
+        <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold">Get In <span class="text-primary">Touch</span></h2>
+            <p class="text-secondary lead">Have a project in mind? Let's build something amazing together.</p>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <div class="contact-info-card p-4 rounded-4 bg-body-tertiary shadow-sm h-100">
+                    <h3 class="mb-4 fw-bold">Contact Information</h3>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-box me-3"><i class="bi bi-geo-alt-fill text-primary"></i></div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Location</h6>
+                            <p class="text-secondary mb-0">{{location}}</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-box me-3"><i class="bi bi-envelope-at-fill text-primary"></i></div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Email</h6>
+                            <a href="mailto:{{email}}" class="text-secondary text-decoration-none mb-0">{{email}}</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-box me-3"><i class="bi bi-telephone-fill text-primary"></i></div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Phone</h6>
+                            <a href="tel:{{mobile}}" class="text-secondary text-decoration-none mb-0">{{mobile}}</a>
+                        </div>
+                    </div>
+
+                    <hr class="my-4 opacity-10">
+
+                    <h5 class="mb-3 fw-bold">Follow Me</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="needs-validation" autocomplete="off">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0 bg-body-tertiary shadow-none" id="name"
+                                    placeholder="Name" formControlName="name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control border-0 bg-body-tertiary shadow-none"
+                                    id="email" placeholder="Email" formControlName="email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0 bg-body-tertiary shadow-none"
+                                    id="subject" placeholder="Subject" formControlName="subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control border-0 bg-body-tertiary shadow-none"
+                                    placeholder="Message" id="message" style="height: 150px"
+                                    formControlName="message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary btn-lg w-100 py-3 shadow" type="submit">
+                                Send Message <i class="bi bi-send-fill ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

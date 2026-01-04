@@ -1,0 +1,50 @@
+<section class="projects-wrapper">
+  <div class="projects-hero py-5 text-center position-relative overflow-hidden">
+    <div class="container position-relative z-3">
+      <h6 class="text-primary fw-bold text-uppercase ls-2 animate-fade">My Creations</h6>
+      <h1 class="display-2 fw-bolder mb-4">Crafting Digital <span class="text-gradient">Masterpieces</span></h1>
+      <p class="lead text-secondary mx-auto mb-5" style="max-width: 700px;">
+        A collection of my most challenging and rewarding projects, ranging from complex enterprise systems to elegant mobile interfaces.
+      </p>
+
+      <div class="filter-glass d-inline-flex p-2 rounded-pill shadow-lg mb-5">
+        @for (cat of ['All', 'Web', 'Mobile', 'UI/UX']; track cat) {
+          <button (click)="setFilter(cat)" 
+                  [class.active]="selectedFilter() === cat"
+                  class="btn filter-link rounded-pill px-4">
+            {{ cat }}
+          </button>
+        }
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container pb-5">
+    <div class="row g-4 justify-content-center">
+      @for (project of filteredProjects(); track project.id) {
+        <div class="col-lg-4 col-md-6">
+          <div class="project-premium-card border-0 rounded-5 overflow-hidden shadow-sm">
+            <div class="image-wrapper position-relative">
+              <img [src]="project.image" [alt]="project.title" class="img-fluid">
+              <div class="card-overlay d-flex flex-column justify-content-end p-4">
+                <div class="badge-group mb-2">
+                  <span class="badge rounded-pill bg-white text-dark shadow-sm">{{ project.category }}</span>
+                </div>
+                <h3 class="text-white fw-bold">{{ project.title }}</h3>
+                <p class="text-white-50 small mb-3">{{ project.description }}</p>
+                
+                <div class="d-flex gap-2">
+                  @for (tool of project.tools; track tool) {
+                    <span class="tool-tag">#{{ tool }}</span>
+                  }
+                </div>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

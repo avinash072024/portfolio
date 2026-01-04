@@ -1,0 +1,40 @@
+<!-- <div class="scroll-progress-container fixed-top">
+    <div class="scroll-progress-bar" [style.width.%]="scrollProgress()"></div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg fixed-top transition-all"
+    [ngClass]="isScrolled() ? 'navbar-glass shadow-sm py-2' : 'bg-transparent py-4'">
+    <div class="container">
+
+        <a class="navbar-brand fw-bolder fs-3" routerLink="/">
+            <span class="brand-gradient">{{websiteName}}</span><span class="text-primary">.</span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <div class="hamburger-icon" [class.open]="isMobileMenuOpen()">
+                <span></span><span></span><span></span>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                @for (link of navLinks; track link.path) {
+                <li class="nav-item mx-lg-2">
+                    <a class="nav-link modern-link" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }" [routerLink]="link.path" (click)="closeNavbar()">
+                        {{ link.label }}
+                    </a>
+                </li>
+                }
+
+                <li class="nav-item ms-lg-4">
+                    <button (click)="toggleTheme()" class="theme-toggle-btn shadow" 
+                        [title]="isDarkMode() ? 'Switch to Light Mode' : 'Switch to Dark Mode'">
+                        <i [class]="isDarkMode() ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill'"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

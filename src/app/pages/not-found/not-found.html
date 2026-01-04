@@ -1,0 +1,66 @@
+<section class="hero-wrapper d-flex align-items-center position-relative overflow-hidden">
+  <div class="glow-blob blob-top"></div>
+  <div class="glow-blob blob-bottom"></div>
+
+  <div class="container position-relative z-3">
+    <div class="row align-items-center min-vh-100 py-5">
+      
+      <div class="col-lg-7 text-center text-lg-start">
+        <div class="reveal-text">
+          <span class="badge rounded-pill bg-primary-subtle text-primary px-3 py-2 mb-4 border border-primary border-opacity-25">
+            <span class="pulsating-dot"></span> Available for Freelance
+          </span>
+          
+          <h1 class="display-1 fw-bolder mb-3 ls-tight">
+            Building <span class="text-gradient">Scalable</span><br>
+            Digital Solutions.
+          </h1>
+          
+          <p class="lead text-secondary mb-5 pe-lg-5">
+            I'm <span class="text-body fw-bold">{{ userName() }}</span>, a {{ designation() }} 
+            dedicated to crafting high-performance web applications using 
+            <span class="text-primary fw-medium">Angular 20</span> and 
+            <span class="text-primary fw-medium">Bootstrap 5.3</span>.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+            <a routerLink="/projects" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-glow">
+              Explore My Work <i class="bi bi-arrow-right-short ms-2"></i>
+            </a>
+            <a routerLink="/contact" class="btn btn-outline-secondary btn-lg rounded-pill px-5 py-3">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 mt-5 mt-lg-0 d-lg-block">
+        <div class="visual-container">
+          <div class="floating-ui-card ui-1 shadow-lg">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-code-square text-primary me-2 fs-4"></i>
+              <div>
+                <small class="d-block text-secondary">Tech Stack</small>
+                <strong>Modern & Clean</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-ui-card ui-2 shadow-lg">
+             <div class="d-flex align-items-center">
+              <i class="bi bi-cpu text-info me-2 fs-4"></i>
+              <div>
+                <small class="d-block text-secondary">Performance</small>
+                <strong>Optimized 100%</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-box shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600" alt="Profile" class="img-fluid rounded-4" style="height: 30rem; width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

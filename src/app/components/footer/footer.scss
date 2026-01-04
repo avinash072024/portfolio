@@ -1,0 +1,102 @@
+// .footer {
+//     .footer-link {
+//         font-size: 0.9rem;
+//         transition: color 0.3s ease;
+
+//         &:hover {
+//             color: var(--bs-primary) !important;
+//         }
+//     }
+
+//     .social-icon {
+//         font-size: 1.25rem;
+//         color: var(--bs-secondary);
+//         transition: all 0.3s ease;
+
+//         &:hover {
+//             color: var(--bs-primary);
+//             transform: translateY(-3px);
+//             display: inline-block;
+//         }
+//     }
+// }
+
+.footer {
+    .cta-card {
+        position: relative;
+        z-index: 2;
+        margin-bottom: -60px; // Pulls the card down into the footer area
+        background: linear-gradient(135deg, var(--bs-primary), #6f42c1) !important;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    .footer-content {
+        position: relative;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+    }
+
+    .dot {
+        color: var(--bs-primary);
+    }
+
+    .social-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--bs-body-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bs-body-color);
+        text-decoration: none;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid var(--bs-border-color);
+
+        &:hover {
+            background: var(--bs-primary);
+            color: white;
+            transform: scale(1.1) rotate(10deg);
+        }
+    }
+
+    .footer-links {
+        li {
+            margin-bottom: 12px;
+
+            a {
+                color: var(--bs-secondary-color);
+                text-decoration: none;
+                transition: all 0.3s ease;
+                position: relative;
+                left: 0;
+
+                &:hover {
+                    color: var(--bs-primary);
+                    padding-left: 8px; // Subtle "slide" effect on hover
+                }
+            }
+        }
+    }
+
+    .form-control {
+        border-radius: 8px 0 0 8px;
+        padding: 12px 20px;
+    }
+
+    .btn-primary {
+        border-radius: 0 8px 8px 0;
+    }
+}
+
+// Adjustments for mobile to ensure the CTA card doesn't look cramped
+@media (max-width: 767.98px) {
+    .footer .cta-card {
+        margin-bottom: -40px;
+        text-align: center;
+    }
+}

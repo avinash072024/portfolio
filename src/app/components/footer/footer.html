@@ -1,0 +1,121 @@
+<!-- <footer class="footer mt-auto py-5 bg-body-tertiary border-top">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+
+            <div class="col-md-4 text-center text-md-start">
+                <a class="navbar-brand fw-bold fs-4 text-decoration-none text-body" routerLink="/">
+                    <span class="text-primary px-1 border border-primary rounded me-1">P</span>ortfolio
+                </a>
+                <p class="text-secondary small mt-2 mb-0">
+                    &copy; {{ currentYear }} Designed & Built by <strong>Your Name</strong>.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-inline text-center mb-0">
+                    <li class="list-inline-item mx-2">
+                        <a routerLink="/about" class="text-secondary text-decoration-none footer-link">About</a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                        <a routerLink="/projects" class="text-secondary text-decoration-none footer-link">Projects</a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                        <a routerLink="/contact" class="text-secondary text-decoration-none footer-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="#" class="social-icon" aria-label="Github">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer> -->
+
+<footer class="footer position-relative mt-5 pt-5">
+    <div class="container pb-5">
+        <div
+            class="cta-card bg-primary text-white p-4 p-md-5 rounded-4 shadow-lg d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="text-center text-md-start mb-4 mb-md-0">
+                <h2 class="fw-bold mb-1">Ready to start a project?</h2>
+                <p class="mb-0 opacity-75">I'm currently available for freelance work and full-time roles.</p>
+            </div>
+            <a routerLink="/contact" class="btn btn-light btn-lg rounded-pill px-4 fw-bold shadow-sm">
+                Let's Chat <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-content bg-body-tertiary pt-5 pb-4 border-top">
+        <div class="container">
+            <div class="row gy-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand fw-bolder fs-3 text-body" routerLink="/">
+                        <!-- <span class="text-primary">PORTFOLIO</span><span class="dot">.</span> -->
+                        <span class="text-primary">{{websiteName}}</span><span class="dot">.</span>
+                    </a>
+                    <p class="text-secondary mt-3 mb-4 pe-lg-5">
+                        Developing digital experiences that combine modern technology with user-centric design.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-circle"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-circle"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-circle"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold mb-4">Navigation</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a routerLink="/home">Home</a></li>
+                        <li><a routerLink="/about">About Me</a></li>
+                        <li><a routerLink="/projects">Projects</a></li>
+                        <li><a routerLink="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold mb-4">Services</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="fw-bold mb-4">Stay in the Loop</h6>
+                    <p class="text-secondary small">Subscribe to get my latest articles and project updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-body border-0 shadow-none"
+                            placeholder="Email address">
+                        <button class="btn btn-primary px-4" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 opacity-10">
+
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <span class="text-secondary small">&copy; {{ currentYear }} Portfolio. All rights reserved.</span>
+                <!-- <div class="small">
+                    <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none">Terms of Service</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</footer>
