@@ -17,7 +17,7 @@ export class About {
   education = [
     { year: '2015 - 2018', degree: 'Master of Computer Application', school: 'Shivaji University, Kolhapur', desc: 'Specialized in Computer Science with a focus on Web Technologies.' },
     { year: '2012 - 2015', degree: 'Bachelor of Science', school: 'Shivaji University, Kolhapur', desc: 'Focused on Computer Science and Mathematics.' },
-    { year: '2011 - 2012', degree: 'Higher Secondary', school: 'Science Academy', desc: 'Focused on Mathematics and Physics.' }
+    { year: '2011 - 2012', degree: 'Higher Secondary', school: '', desc: 'Focused on Mathematics and Physics.' }
   ];
 
   experience = [
