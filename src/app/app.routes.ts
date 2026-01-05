@@ -9,7 +9,7 @@ import { NotFound } from './pages/not-found/not-found';
 import { UnderConstructionPage } from './components/under-construction-page/under-construction-page';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home, title: `Home | ${Constants.APP_TITLE}` },
   { path: 'about', component: About, title: `About | ${Constants.APP_TITLE}` },
   { path: 'skills', component: Skills, title: `Skills | ${Constants.APP_TITLE}` },
