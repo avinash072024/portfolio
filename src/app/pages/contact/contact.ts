@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+declare var $: any;
 
 @Component({
   selector: 'app-contact',
@@ -15,6 +16,8 @@ export class Contact {
   email: string = 'avinashmarbhal1994@outlook.com';
   mobile: string = '+91 87964 57407';
 
+  submitted: boolean = false;
+
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
@@ -25,10 +28,15 @@ export class Contact {
   }
 
   onSubmit() {
+    debugger;
+    this.submitted = true;
     if (this.contactForm.valid) {
+      debugger;
       console.log('Form Data:', this.contactForm.value);
-      alert('Thank you! Your message has been sent (simulated).');
+      // alert('Thank you! Your message has been sent (simulated).');
       this.contactForm.reset();
+      this.submitted = false;
+      $('#staticBackdrop').modal('show');
     }
   }
 }

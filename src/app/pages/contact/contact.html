@@ -51,32 +51,116 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control border-0 bg-body-tertiary shadow-none" id="name"
-                                    placeholder="Name" formControlName="name">
+                                <input type="text" class="form-control bg-body-tertiary shadow-none"
+                                    name="name" placeholder="Name" formControlName="name"
+                                    [class.is-invalid]="(submitted || contactForm.get('name')?.dirty || contactForm.get('name')?.touched) && contactForm.get('name')?.invalid">
                                 <label for="name">Your Name</label>
                             </div>
+                            <!-- @if (submitted && contactForm.get('name')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('name')?.hasError('required')) {
+                                <div>Name is required</div>
+                                }
+                                @if (contactForm.get('name')?.hasError('minlength')) {
+                                <div>Name must be at least 3 characters long</div>
+                                }
+                            </div>
+                            } -->
+                            @if ((submitted || contactForm.get('name')?.dirty || contactForm.get('name')?.touched) &&
+                            contactForm.get('name')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('name')?.hasError('required')) {
+                                <div>Name is required</div>
+                                }
+                                @if (contactForm.get('name')?.hasError('minlength')) {
+                                <div>Name must be at least 3 characters long</div>
+                                }
+                            </div>
+                            }
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control border-0 bg-body-tertiary shadow-none"
-                                    id="email" placeholder="Email" formControlName="email">
+                                <input type="email" class="form-control bg-body-tertiary shadow-none"
+                                    name="email" placeholder="Email" formControlName="email"
+                                    [class.is-invalid]="(submitted || contactForm.get('email')?.dirty || contactForm.get('email')?.touched) && contactForm.get('email')?.invalid">
                                 <label for="email">Your Email</label>
                             </div>
+                            <!-- @if (submitted && contactForm.get('email')?.invalid) {<p class="mb-1 text-danger">Email is
+                                required</p>} -->
+                            <!-- @if (submitted && contactForm.get('email')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('email')?.hasError('required')) {
+                                <div>Email is required</div>
+                                }
+                                @if (contactForm.get('email')?.hasError('email')) {
+                                <div>Enter a valid email address</div>
+                                }
+                            </div>
+                            } -->
+                            @if ((submitted || contactForm.get('email')?.dirty || contactForm.get('email')?.touched) &&
+                            contactForm.get('email')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('email')?.hasError('required')) {
+                                <div>Email is required</div>
+                                }
+                                @if (contactForm.get('email')?.hasError('email')) {
+                                <div>Enter a valid email address</div>
+                                }
+                            </div>
+                            }
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control border-0 bg-body-tertiary shadow-none"
-                                    id="subject" placeholder="Subject" formControlName="subject">
+                                <input type="text" class="form-control bg-body-tertiary shadow-none"
+                                    [class.is-invalid]="(submitted || contactForm.get('subject')?.dirty || contactForm.get('subject')?.touched) && contactForm.get('subject')?.invalid"
+                                    name="subject" placeholder="Subject" formControlName="subject">
                                 <label for="subject">Subject</label>
                             </div>
+                            <!-- @if (submitted && contactForm.get('subject')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('subject')?.hasError('required')) {
+                                <div>Subject is required</div>
+                                }
+                            </div>
+                            } -->
+                            @if ((submitted || contactForm.get('subject')?.dirty || contactForm.get('subject')?.touched)
+                            && contactForm.get('subject')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('subject')?.hasError('required')) {
+                                <div>Subject is required</div>
+                                }
+                            </div>
+                            }
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control border-0 bg-body-tertiary shadow-none"
-                                    placeholder="Message" id="message" style="height: 150px"
+                                <textarea class="form-control bg-body-tertiary shadow-none"
+                                    placeholder="Message" name="message" style="height: 150px"
+                                    [class.is-invalid]="(submitted || contactForm.get('message')?.dirty || contactForm.get('message')?.touched) && contactForm.get('message')?.invalid"
                                     formControlName="message"></textarea>
                                 <label for="message">Message</label>
                             </div>
+                            <!-- @if (submitted && contactForm.get('message')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('message')?.hasError('required')) {
+                                <div>Message is required</div>
+                                }
+                                @if (contactForm.get('message')?.hasError('minlength')) {
+                                <div>Message must be at least 10 characters long</div>
+                                }
+                            </div>
+                            } -->
+                            @if ((submitted || contactForm.get('message')?.dirty || contactForm.get('message')?.touched)
+                            && contactForm.get('message')?.invalid) {
+                            <div class="invalid-feedback d-block">
+                                @if (contactForm.get('message')?.hasError('required')) {
+                                <div>Message is required</div>
+                                }
+                                @if (contactForm.get('message')?.hasError('minlength')) {
+                                <div>Message must be at least 10 characters long</div>
+                                }
+                            </div>
+                            }
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary btn-lg w-100 py-3 shadow" type="submit">
@@ -89,3 +173,23 @@
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body">
+                Thank you! Your message has been sent.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">OK</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+        </div>
+    </div>
+</div>
