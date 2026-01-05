@@ -23,6 +23,6 @@ export class About {
   experience = [
     { year: '2024 - Present', role: 'Senior Web Developer', company: 'Manorama Infosolutions Pvt. Ltd.', desc: 'Leading the frontend team to build scalable Angular applications.' },
     { year: '2022 - 2024', role: 'Web Developer', company: 'Bluebenz Digitizations Pvt. Ltd.', desc: 'Developed responsive UI components using Bootstrap and Angular.' },
-    { year: '2021 - 2022', role: 'Junior Developer', company: 'MindLine Technologies Pvt. Ltd.', desc: 'Designed & developed responsive websites using Bootstrap.' }
+    { year: '2021 - 2022', role: 'Junior Web Developer', company: 'MindLine Technologies Pvt. Ltd.', desc: 'Designed & developed responsive websites using Bootstrap.' }
   ];
 }
