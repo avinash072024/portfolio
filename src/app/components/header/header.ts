@@ -24,7 +24,7 @@ export class Header {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scroll = window.scrollY;
-    this.isScrolled.set(scroll > 50);
+    this.isScrolled.set(scroll > 25);
 
     // Calculate scroll percentage
     const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;

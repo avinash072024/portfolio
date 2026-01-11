@@ -15,7 +15,7 @@ export const routes: Routes = [
   { path: 'skills', component: Skills, title: `Skills | ${Constants.APP_TITLE}` },
   { path: 'contact', component: Contact, title: `Contact | ${Constants.APP_TITLE}` },
   // { path: 'projects', component: Projects, title: `Projects | ${Constants.APP_TITLE}` },
-  { path: 'projects', component: UnderConstructionPage, title: `Projects | ${Constants.APP_TITLE}` },
+  { path: 'projects', component: Projects, title: `Projects | ${Constants.APP_TITLE}` },
   { path: 'web-design', component: UnderConstructionPage, title: `Web Design | ${Constants.APP_TITLE}` },
   { path: 'app-development', component: UnderConstructionPage, title: `App Development | ${Constants.APP_TITLE}` },
   { path: 'ui/ux-design', component: UnderConstructionPage, title: `UI/UX Design | ${Constants.APP_TITLE}` },
