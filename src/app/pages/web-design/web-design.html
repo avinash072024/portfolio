@@ -1,0 +1,78 @@
+<section class="design-page">
+    <div class="hero-bg py-5">
+        <div class="container mt-5 py-5 text-center">
+            <h6 class="text-primary fw-bold text-uppercase ls-2">Digital Craftsmanship</h6>
+            <h1 class="display-2 fw-bolder mb-4">Design that <span class="text-gradient">Converts.</span></h1>
+            <p class="lead text-secondary mx-auto mb-5" style="max-width: 700px;">
+                I bridge the gap between pure art and functional technology. I build websites that don't just look
+                pretty—they work for your business.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg">Start a Project</button>
+                <button class="btn btn-outline-secondary btn-lg rounded-pill px-5 py-3">View My Style</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">My Design <span class="text-primary">Process</span></h2>
+        </div>
+        <div class="row g-4">
+            @for (step of processSteps; track step.title; let i = $index) {
+            <div class="col-md-3">
+                <div class="process-card p-4 rounded-4 text-center h-100 shadow-sm border">
+                    <div class="step-num text-primary opacity-25 fw-black">0{{ i + 1 }}</div>
+                    <div class="icon-circle mb-3 mx-auto">
+                        <i class="bi {{ step.icon }} fs-3"></i>
+                    </div>
+                    <h5 class="fw-bold">{{ step.title }}</h5>
+                    <p class="text-secondary small mb-0">{{ step.desc }}</p>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+
+    <div class="bg-body-tertiary py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="mockup-container p-2 rounded-5 shadow-lg bg-white">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800"
+                            class="img-fluid rounded-4" alt="Web Design Mockup">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="fw-bold mb-4">Focusing on User <span class="text-primary">Experience</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex">
+                            <i class="bi bi-lightning-charge-fill text-warning me-3 fs-4"></i>
+                            <div>
+                                <h6 class="fw-bold">Speed Optimized</h6>
+                                <p class="text-secondary small">Websites optimized for Core Web Vitals to ensure your
+                                    users never wait.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex">
+                            <i class="bi bi-phone-vibrate text-info me-3 fs-4"></i>
+                            <div>
+                                <h6 class="fw-bold">Mobile First</h6>
+                                <p class="text-secondary small">Responsive layouts that look stunning on iPhones,
+                                    Androids, and tablets.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex">
+                            <i class="bi bi-graph-up-arrow text-success me-3 fs-4"></i>
+                            <div>
+                                <h6 class="fw-bold">SEO Friendly</h6>
+                                <p class="text-secondary small">Clean semantic HTML structure that Google's crawlers
+                                    absolutely love.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -38,7 +38,7 @@ export class Projects {
         { line3: 'Developed comprehensive admin dashboards for managing uploads, deletions, and user actions, increasing operational transparency and reducing turnaround time.' }
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 14', 'TypeScript', 'Bootstrap 5', 'RxJS'],
+      tools: ['Angular 14', 'TypeScript', 'Bootstrap 5', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -53,7 +53,7 @@ export class Projects {
         { line5: 'Gain actionable insights with visual reports and metrics on workforce trends and HR operations.' }
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 14', 'TypeScript', 'Bootstrap 5', 'RxJS'],
+      tools: ['Angular 14', 'TypeScript', 'Bootstrap 5', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -69,7 +69,7 @@ export class Projects {
         { line6: 'Reports & Dashboards: Real-time insights into contract statuses, pending approvals, and upcoming expirations.'}
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS'],
+      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -85,7 +85,7 @@ export class Projects {
         { line6: 'User Access Control: Role-based access to ensure secure and authorized operations.'}
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS'],
+      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -100,7 +100,7 @@ export class Projects {
         { line5: 'Alerts & Notifications: Automated reminders for maturity, renewals, and key investment milestones.' }
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS', 'Ag-Grid'],
+      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS', 'jQuery', 'HTML5', 'SCSS', 'Ag-Grid'],
       link: ''
     },
     {
@@ -116,7 +116,7 @@ export class Projects {
         { line6: 'Reports & Dashboards: Analytics on ticket volume, response time, resolution efficiency, and team performance.' }
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS'],
+      tools: ['Angular 15', 'TypeScript', 'Bootstrap 5.2', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -132,7 +132,7 @@ export class Projects {
         { line6: 'Verification & Compliance: Workflow to handle legal and technical verification of assets and ensure regulatory compliance.' }
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 16', 'TypeScript', 'Bootstrap 5.3', 'RxJS'],
+      tools: ['Angular 16', 'TypeScript', 'Bootstrap 5.3', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -148,7 +148,7 @@ export class Projects {
         { line6: 'Reports & Analytics: Insights for HR and project managers on resource movement, idle time, and workforce planning.' }
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 16', 'TypeScript', 'Bootstrap 5.3', 'RxJS'],
+      tools: ['Angular 16', 'TypeScript', 'Bootstrap 5.3', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: ''
     },
     {
@@ -159,12 +159,10 @@ export class Projects {
         { line1: 'Designed and developed responsive layouts using modern HTML, CSS, and Angular techniques.' },
         { line2: 'Implemented smooth UI animations for better user experience.' },
         { line3: 'Integrated BillDesk payment gateway for secure and reliable payment processing.' },
-        { line4: 'Ensured cross-browser compatibility and optimized performance across devices.'},
-        { line5: 'Notifications & Alerts: Automated updates for new allocations, availability changes, and skill match opportunities.' },
-        { line6: 'Reports & Analytics: Insights for HR and project managers on resource movement, idle time, and workforce planning.' }
+        { line4: 'Ensured cross-browser compatibility and optimized performance across devices.'}
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 19', 'TypeScript', 'Bootstrap 5.3', 'RxJS'],
+      tools: ['Angular 19', 'TypeScript', 'Bootstrap 5.3', 'RxJS', 'jQuery', 'HTML5', 'SCSS'],
       link: 'https://mahalaxmikolhapur.com/home'
     },
     {
@@ -177,7 +175,7 @@ export class Projects {
         { line3: 'Involved in implementing new features and addressing reported system bugs.' },
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800',
-      tools: ['Angular 19', 'TypeScript', 'Bootstrap 5.3', 'RxJS', 'jQuery'],
+      tools: ['Angular 14', 'TypeScript', 'Bootstrap', 'RxJS', 'jQuery', 'HTML5', 'SCSS', 'HTML5', 'SCSS'],
       link: ''
     },
   ];

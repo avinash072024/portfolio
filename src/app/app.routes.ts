@@ -7,6 +7,7 @@ import { Projects } from './pages/projects/projects';
 import { Contact } from './pages/contact/contact';
 import { NotFound } from './pages/not-found/not-found';
 import { UnderConstructionPage } from './components/under-construction-page/under-construction-page';
+import { WebDesign } from './pages/web-design/web-design';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
