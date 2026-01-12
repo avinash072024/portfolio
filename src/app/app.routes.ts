@@ -7,7 +7,6 @@ import { Projects } from './pages/projects/projects';
 import { Contact } from './pages/contact/contact';
 import { NotFound } from './pages/not-found/not-found';
 import { UnderConstructionPage } from './components/under-construction-page/under-construction-page';
-import { WebDesign } from './pages/web-design/web-design';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,7 +20,6 @@ export const routes: Routes = [
   { path: 'app-development', component: UnderConstructionPage, title: `App Development | ${Constants.APP_TITLE}` },
   { path: 'ui/ux-design', component: UnderConstructionPage, title: `UI/UX Design | ${Constants.APP_TITLE}` },
   { path: 'consulting', component: UnderConstructionPage, title: `Consulting | ${Constants.APP_TITLE}` },
-
 
   { path: '**', component: NotFound, title: `404 Not Found | ${Constants.APP_TITLE}` }
 ];
