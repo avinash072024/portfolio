@@ -18,7 +18,7 @@
         <!-- <h2 class="fw-bold m-0">My <span class="text-primary">Portfolio</span></h2> -->
         <h4 class="fw-bold m-0">My <span class="text-primary">Projects</span> ({{projects.length}})</h4>
 
-        <div class="view-toggle-group p-1 rounded-pill bg-body-tertiary border">
+        <div class="view-toggle-group p-1 rounded-pill bg-body-tertiary border d-none d-sm-none d-md-block">
           <button (click)="toggleView('grid')" [class.active]="viewMode() === 'grid'" class="btn btn-sm rounded-pill">
             <i class="bi bi-grid-fill me-1"></i> Grid
           </button>
@@ -71,7 +71,7 @@
                   <!-- <button class="btn btn-outline-primary btn-sm rounded-pill px-3">View Details</button> -->
                   <button class="btn btn-outline-primary btn-sm rounded-pill px-3" data-bs-toggle="modal"
                     data-bs-target="#projectModal" (click)="openDetails(project)">
-                    View Details
+                    Details
                   </button>
                 </div>
               </div>
