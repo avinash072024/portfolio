@@ -6,7 +6,7 @@
             <p class="text-secondary lead">Have a project in mind? Let's build something amazing together.</p>
         </div>
 
-        <div class="row g-5 d-flex justify-content-center align-items-center">
+        <div class="row g-5">
             <div class="col-lg-5">
                 <div class="contact-info-card p-4 rounded-4 bg-body-tertiary shadow-sm h-100">
                     <h3 class="mb-4 fw-bold">Contact Information</h3>
@@ -23,7 +23,7 @@
                         <div class="icon-box me-3"><i class="bi bi-envelope-at-fill text-primary"></i></div>
                         <div>
                             <h6 class="mb-0 fw-bold">Email</h6>
-                            <a href="mailto:{{email}}" class="text-secondary text-decoration-none mb-0">{{email}}</a>
+                            <a href="mailto:{{email}}?subject=Contact%20Request" class="text-secondary text-decoration-none mb-0">{{email}}</a>
                         </div>
                     </div>
 
@@ -46,26 +46,16 @@
                 </div>
             </div>
 
-            <div class="col-lg-7 d-none">
+            <div class="col-lg-7">
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="needs-validation" autocomplete="off">
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control bg-body-tertiary shadow-none"
+                                <input appOnlyCharacters type="text" class="form-control bg-body-tertiary shadow-none"
                                     name="name" placeholder="Name" formControlName="name"
                                     [class.is-invalid]="(submitted || contactForm.get('name')?.dirty || contactForm.get('name')?.touched) && contactForm.get('name')?.invalid">
                                 <label for="name">Your Name</label>
                             </div>
-                            <!-- @if (submitted && contactForm.get('name')?.invalid) {
-                            <div class="invalid-feedback d-block">
-                                @if (contactForm.get('name')?.hasError('required')) {
-                                <div>Name is required</div>
-                                }
-                                @if (contactForm.get('name')?.hasError('minlength')) {
-                                <div>Name must be at least 3 characters long</div>
-                                }
-                            </div>
-                            } -->
                             @if ((submitted || contactForm.get('name')?.dirty || contactForm.get('name')?.touched) &&
                             contactForm.get('name')?.invalid) {
                             <div class="invalid-feedback d-block">
@@ -75,6 +65,9 @@
                                 @if (contactForm.get('name')?.hasError('minlength')) {
                                 <div>Name must be at least 3 characters long</div>
                                 }
+                                <!-- @if (contactForm.get('name')?.hasError('pattern')) {
+                                    <div>Only characters allowed</div>
+                                } -->
                             </div>
                             }
                         </div>
@@ -85,18 +78,6 @@
                                     [class.is-invalid]="(submitted || contactForm.get('email')?.dirty || contactForm.get('email')?.touched) && contactForm.get('email')?.invalid">
                                 <label for="email">Your Email</label>
                             </div>
-                            <!-- @if (submitted && contactForm.get('email')?.invalid) {<p class="mb-1 text-danger">Email is
-                                required</p>} -->
-                            <!-- @if (submitted && contactForm.get('email')?.invalid) {
-                            <div class="invalid-feedback d-block">
-                                @if (contactForm.get('email')?.hasError('required')) {
-                                <div>Email is required</div>
-                                }
-                                @if (contactForm.get('email')?.hasError('email')) {
-                                <div>Enter a valid email address</div>
-                                }
-                            </div>
-                            } -->
                             @if ((submitted || contactForm.get('email')?.dirty || contactForm.get('email')?.touched) &&
                             contactForm.get('email')?.invalid) {
                             <div class="invalid-feedback d-block">
@@ -116,13 +97,6 @@
                                     name="subject" placeholder="Subject" formControlName="subject">
                                 <label for="subject">Subject</label>
                             </div>
-                            <!-- @if (submitted && contactForm.get('subject')?.invalid) {
-                            <div class="invalid-feedback d-block">
-                                @if (contactForm.get('subject')?.hasError('required')) {
-                                <div>Subject is required</div>
-                                }
-                            </div>
-                            } -->
                             @if ((submitted || contactForm.get('subject')?.dirty || contactForm.get('subject')?.touched)
                             && contactForm.get('subject')?.invalid) {
                             <div class="invalid-feedback d-block">
@@ -140,16 +114,6 @@
                                     formControlName="message"></textarea>
                                 <label for="message">Message</label>
                             </div>
-                            <!-- @if (submitted && contactForm.get('message')?.invalid) {
-                            <div class="invalid-feedback d-block">
-                                @if (contactForm.get('message')?.hasError('required')) {
-                                <div>Message is required</div>
-                                }
-                                @if (contactForm.get('message')?.hasError('minlength')) {
-                                <div>Message must be at least 10 characters long</div>
-                                }
-                            </div>
-                            } -->
                             @if ((submitted || contactForm.get('message')?.dirty || contactForm.get('message')?.touched)
                             && contactForm.get('message')?.invalid) {
                             <div class="invalid-feedback d-block">
@@ -196,7 +160,7 @@
 
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
                 <div class="d-flex justify-content-between align-items-center">

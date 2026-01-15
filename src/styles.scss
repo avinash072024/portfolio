@@ -9,6 +9,16 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
+/* Disable text selection across the whole app */
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and older */
+    user-select: none;
+    /* Standard syntax */
+}
+
 .about-section,
 .contact-section,
 .projects-section,
@@ -29,8 +39,20 @@ section {
     height: 30rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+    .profile-pic {
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .profile-pic {
         height: auto;
     }
 }
+
+// @media screen and (max-width: 600px) {
+//     .profile-pic {
+//         height: auto;
+//     }
+// }

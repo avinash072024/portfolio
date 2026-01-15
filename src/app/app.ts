@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, PLATFORM_ID, signal } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, PLATFORM_ID, signal } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { ThemeService } from './services/theme-service';
 import { Header } from "./components/header/header";
@@ -39,5 +39,38 @@ export class App implements OnInit {
   ngOnInit() {
     // This restores the theme from localStorage on every page load/refresh
     this.themeService.initTheme();
+  }
+
+  @HostListener('document:contextmenu', ['$event'])
+  onContextMenu(event: MouseEvent) {
+    event.preventDefault();
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onKeyDown(event: KeyboardEvent) {
+    // Disable Ctrl+C (Copy)
+    if (event.ctrlKey && event.key === 'c') {
+      event.preventDefault();
+    }
+
+    // Disable Ctrl+P (Print)
+    if (event.ctrlKey && event.key === 'p') {
+      event.preventDefault();
+    }
+
+    // Disable F12 (Inspect Element)
+    if (event.key === 'F12') {
+      event.preventDefault();
+    }
+
+    // Disable Ctrl+Shift+I (Inspect Element)
+    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+      event.preventDefault();
+    }
+
+    // Disable Ctrl+U (View Source)
+    if (event.ctrlKey && event.key === 'u') {
+      event.preventDefault();
+    }
   }
 }
