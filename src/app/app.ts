@@ -4,10 +4,11 @@ import { ThemeService } from './services/theme-service';
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import { isPlatformBrowser } from '@angular/common';
+import { ScrollTop } from "./components/scroll-top/scroll-top";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer],
+  imports: [RouterOutlet, Header, Footer, ScrollTop],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
