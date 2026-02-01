@@ -5,10 +5,11 @@ import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import { isPlatformBrowser } from '@angular/common';
 import { ScrollTop } from "./components/scroll-top/scroll-top";
+import { NewFooter } from './components/new-footer/new-footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, ScrollTop],
+  imports: [RouterOutlet, Header, NewFooter, ScrollTop],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

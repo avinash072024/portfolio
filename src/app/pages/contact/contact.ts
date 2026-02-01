@@ -29,12 +29,9 @@ export class Contact {
   }
 
   onSubmit() {
-    debugger;
     this.submitted = true;
     if (this.contactForm.valid) {
-      debugger;
       console.log('Form Data:', this.contactForm.value);
-      // alert('Thank you! Your message has been sent (simulated).');
       this.contactForm.reset();
       this.submitted = false;
       $('#staticBackdrop').modal('show');

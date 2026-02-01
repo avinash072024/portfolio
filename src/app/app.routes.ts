@@ -7,13 +7,15 @@ import { Projects } from './pages/projects/projects';
 import { Contact } from './pages/contact/contact';
 import { NotFound } from './pages/not-found/not-found';
 import { UnderConstructionPage } from './components/under-construction-page/under-construction-page';
+import { NewContact } from './pages/new-contact/new-contact';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home, title: `Home | ${Constants.APP_TITLE}` },
   { path: 'about', component: About, title: `About | ${Constants.APP_TITLE}` },
   { path: 'skills', component: Skills, title: `Skills | ${Constants.APP_TITLE}` },
-  { path: 'contact', component: Contact, title: `Contact | ${Constants.APP_TITLE}` },
+  // { path: 'contact', component: Contact, title: `Contact | ${Constants.APP_TITLE}` },
+  { path: 'contact', component: NewContact, title: `Contact | ${Constants.APP_TITLE}` },
   // { path: 'projects', component: Projects, title: `Projects | ${Constants.APP_TITLE}` },
   { path: 'projects', component: Projects, title: `Projects | ${Constants.APP_TITLE}` },
   { path: 'web-design', component: UnderConstructionPage, title: `Web Design | ${Constants.APP_TITLE}` },
