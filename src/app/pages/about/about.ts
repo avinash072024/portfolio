@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
 export class About {
   experienceYears = 5; // Example dynamic data
   projectsCompleted = 50;
-
-  downloadResume() {
-    window.open('assets/resume.pdf', '_blank');
-  }
 
   education = [
     { year: '2015 - 2018', degree: 'Master of Computer Application', school: 'Shivaji University, Kolhapur', desc: 'Specialized in Computer Science with a focus on Web Technologies.' },

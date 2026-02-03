@@ -2,10 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Portfolio2</title>
+  <title>Avinash — Frontend Developer Portfolio</title>
   <base href="/">
+  <meta name="description" content="Avinash's personal portfolio — frontend developer showcasing projects, skills, and contact information.">
+  <meta name="keywords" content="Avinash, frontend developer, portfolio, Angular, web developer, projects, contact">
+  <meta name="author" content="Avinash">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://www.example.com/">
+  <meta name="robots" content="index, follow">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Avinash — Frontend Developer Portfolio">
+  <meta property="og:description" content="Frontend developer portfolio showcasing projects, skills, and contact information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Avinash — Frontend Developer Portfolio">
+  <meta name="twitter:description" content="Frontend developer portfolio showcasing projects, skills, and contact information.">
+
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Sitemap link (update domain if needed) -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- Structured data: Person + Website. Update URLs and social links. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Avinash",
+        "url": "https://www.example.com/",
+        "jobTitle": "Frontend Developer",
+        "sameAs": [
+          "https://github.com/yourusername",
+          "https://linkedin.com/in/yourusername"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Avinash — Frontend Developer Portfolio",
+        "url": "https://www.example.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.example.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <app-root></app-root>

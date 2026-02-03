@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with your real sitemap URL (include https://)
+Sitemap: https://avinash-marbhal-personal-portfolio.netlify.app/sitemap.xml
