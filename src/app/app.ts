@@ -14,17 +14,7 @@ import { NewFooter } from './components/new-footer/new-footer';
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
-  protected readonly title = signal('portfolio2');
-
-  // constructor(private themeService: ThemeService) { }
-
-  // constructor(private router: Router, private themeService: ThemeService) {
-  //   this.router.events.subscribe(event => {
-  //     if (event instanceof NavigationEnd) {
-  //       window.scrollTo({ top: 0, behavior: 'smooth' });
-  //     }
-  //   });
-  // }
+  protected readonly title = signal('portfolio');
 
   constructor(
     private router: Router,
@@ -43,10 +33,10 @@ export class App implements OnInit {
     this.themeService.initTheme();
   }
 
-  @HostListener('document:contextmenu', ['$event'])
-  onContextMenu(event: MouseEvent) {
-    event.preventDefault();
-  }
+  // @HostListener('document:contextmenu', ['$event'])
+  // onContextMenu(event: MouseEvent) {
+  //   event.preventDefault();
+  // }
 
   @HostListener('document:keydown', ['$event'])
   onKeyDown(event: KeyboardEvent) {

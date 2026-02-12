@@ -21,13 +21,38 @@ export class Skills {
         { name: 'jQuery', icon: 'fa-brands fa-js', level: 80, color: '#0769ad' }
       ]
     },
-    // {
-    //   title: 'Backend & Database',
-    //   skills: [
-    //     { name: 'Node.js', icon: 'bi-server', level: 80, color: '#339933' },
-    //     { name: 'SQL Server', icon: 'bi-database-fill', level: 75, color: '#4479a1' },
-    //     { name: 'Firebase', icon: 'bi-fire', level: 70, color: '#ffca28' }
-    //   ]
-    // }
+    {
+      title: 'Backend & Database',
+      skills: [
+        { name: 'Node.js', icon: 'bi-server', level: 80, color: '#339933' },
+        { name: 'SQL Server', icon: 'bi-database-fill', level: 75, color: '#4479a1' },
+        { name: 'MongoDB', icon: 'bi bi-leaf-fill', level: 85, color: '#47a248' }, // Added MongoDB
+        { name: 'Firebase', icon: 'bi-fire', level: 70, color: '#ffca28' }
+      ]
+    },
+    {
+      title: 'Tools & Design',
+      skills: [
+        { name: 'VS Code', icon: 'bi bi-code-slash', level: 95, color: '#007acc' },
+        { name: 'Figma', icon: 'bi bi-figma', level: 85, color: '#f24e1e' },
+        { name: 'Postman', icon: 'bi bi-send-fill', level: 90, color: '#ff6c37' }
+      ]
+    },
+    {
+      title: 'Version Control & DevOps',
+      skills: [
+        { name: 'Git', icon: 'fa-brands fa-git-alt', level: 92, color: '#f05032' },
+        { name: 'GitHub', icon: 'fa-brands fa-github', level: 95, color: '#181717' },
+        { name: 'GitLab', icon: 'fa-brands fa-gitlab', level: 80, color: '#fc6d26' }
+      ]
+    },
+    {
+      title: 'Payment Gateways',
+      skills: [
+        { name: 'Stripe', icon: 'bi bi-stripe', level: 90, color: '#635bff' },
+        { name: 'Razorpay', icon: 'bi bi-credit-card-2-front-fill', level: 85, color: '#0d94fb' },
+        { name: 'BillDesk', icon: 'bi bi-wallet2', level: 75, color: '#f58220' }
+      ]
+    }
   ];
 }

@@ -43,11 +43,12 @@
             border: 8px solid var(--bs-body-tertiary);
             border-radius: 2rem;
             overflow: hidden;
-            transform: rotate(3deg);
+            // transform: rotate(3deg);
             transition: all 0.5s ease;
 
             &:hover {
-                transform: rotate(0deg) scale(1.02);
+                // transform: rotate(0deg) scale(1.02);
+                transform: scale(1.05);
             }
         }
 
